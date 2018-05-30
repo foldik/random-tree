@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Random tree</h1>
+    <div class="contollers">
+      <button id="new-model-button" type="button" name="button" class="ripple">New</button>
+      <button id="indentation-toggle-button" type="button" name="button" class="ripple">Compressed JSON</button>
+      <button id="sql-button" type="button" name="button" class="ripple">SQL</button>
+      <button data-clipboard-target="#json-mode" id="copy-button" type="button" name="button" class="ripple">Copy</button>
+    </div>
+    <pre><code id="json-mode" class="language-json"></code></pre>
+  </div>
+  <script src="https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js"></script>
+  <script src="scripts/app.js" charset="utf-8"></script>
+</body>
+
+</html>
